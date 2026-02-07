@@ -1,0 +1,31 @@
+/// A point in 2D space
+struct Point {
+  x: float64;
+  y: float64;
+}
+
+/// Properties of a triangle
+struct TriangleProperties {
+  /// Whether the triangle is isosceles (has at least two equal sides)
+  is_isosceles: bool;
+  /// Whether the triangle is equilateral (all sides are equal)
+  is_equilateral: bool;
+  /// Whether the triangle is a right triangle (has a 90-degree angle)
+  is_right_triangle: bool;
+  /// Whether the triangle is scalene (all sides are different)
+  is_scalene: bool;
+  /// The area of the triangle
+  area: float64;
+  /// The perimeter of the triangle
+  perimeter: float64;
+}
+
+/// Properties of a polygon
+struct PolygonProperties {
+  /// Whether the polygon is convex
+  is_convex: bool;
+  /// The area of the polygon (0 if not convex)
+  area: float64;
+  /// Number of vertices in the polygon
+  vertex_count: int32;
+}

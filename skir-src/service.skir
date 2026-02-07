@@ -1,0 +1,33 @@
+import Point,
+TriangleProperties,
+PolygonProperties from "geometry.skir";
+
+/// Request to analyze a triangle
+struct AnalyzeTriangleRequest {
+  /// The three vertices of the triangle
+  point_a: Point;
+  point_b: Point;
+  point_c: Point;
+}
+
+/// Response containing triangle properties
+struct AnalyzeTriangleResponse {
+  properties: TriangleProperties;
+}
+
+/// Analyzes properties of a triangle given its three vertices
+method AnalyzeTriangle(AnalyzeTriangleRequest): AnalyzeTriangleResponse = 10001;
+
+/// Request to analyze a polygon
+struct AnalyzePolygonRequest {
+  /// The vertices of the polygon, in order
+  points: [Point];
+}
+
+/// Response containing polygon properties
+struct AnalyzePolygonResponse {
+  properties: PolygonProperties;
+}
+
+/// Analyzes properties of a polygon given its vertices
+method AnalyzePolygon(AnalyzePolygonRequest): AnalyzePolygonResponse = 10002;
