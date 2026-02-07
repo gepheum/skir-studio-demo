@@ -1,6 +1,6 @@
 {
   "name": "skir-studio-demo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Example Skir service for geometric calculations",
   "keywords": ["skir", "typescript", "geometry", "rpc"],
   "repository": {
@@ -14,11 +14,16 @@
   "bin": {
     "skir-studio-demo": "./dist/server.js"
   },
+  "files": [
+    "dist/",
+    "skirout/"
+  ],
   "scripts": {
     "codegen": "skir gen",
     "codegen:watch": "skir gen --watch",
     "prebuild": "npm run codegen",
     "build": "tsc && cp -r skirout dist/",
+    "prepublishOnly": "npm run build",
     "server": "npm run build && node dist/server.js",
     "format": "prettier --write \"**/*.ts\" && skir format"
   },
