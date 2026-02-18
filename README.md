@@ -1,4 +1,4 @@
-# Skir Studio Demo
+# RPC Studio Demo
 
 ```bash
 npm run server
