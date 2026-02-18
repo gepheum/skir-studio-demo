@@ -1,6 +1,6 @@
 {
   "name": "skir-studio-demo",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Example Skir service for geometric calculations",
   "keywords": ["skir", "typescript", "geometry", "rpc"],
   "repository": {
@@ -31,13 +31,13 @@
     "@types/express": "^5.0.1",
     "express": "^5.1.0",
     "open": "^10.0.0",
-    "skir-client": "^1.0.9"
+    "skir-client": "^1.0.10"
   },
   "devDependencies": {
     "@types/node": "^20.6.0",
     "prettier": "^3.2.4",
     "prettier-plugin-organize-imports": "^4.2.0",
-    "skir": "^1.0.11",
+    "skir": "^1.0.25",
     "skir-typescript-gen": "^1.0.4",
     "typescript": "^5.3.3"
   }
