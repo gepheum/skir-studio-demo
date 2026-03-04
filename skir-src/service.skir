@@ -1,4 +1,12 @@
-import Point, Shape, MeasurementUnit, ShapeMetrics, TriangleInfo, DrawableShape, ShapeCollection from "geometry.skir";
+import {
+  DrawableShape,
+  MeasurementUnit,
+  Point,
+  Shape,
+  ShapeCollection,
+  ShapeMetrics,
+  TriangleInfo,
+} from "geometry.skir";
 
 // =============================================================================
 // METHOD 1: Basic shape analysis - demonstrates simple request/response
@@ -21,7 +29,9 @@ struct CalculateMetricsResponse {
 }
 
 /// Calculates area, perimeter, and other metrics for a geometric shape
-method CalculateMetrics(CalculateMetricsRequest): CalculateMetricsResponse = 10001;
+method CalculateMetrics(
+  CalculateMetricsRequest
+): CalculateMetricsResponse = 10001;
 
 // =============================================================================
 // METHOD 2: Triangle-specific analysis - demonstrates enum pattern matching
@@ -46,7 +56,9 @@ struct AnalyzeTriangleResponse {
 }
 
 /// Analyzes properties specific to triangles (equilateral, isosceles, etc.)
-method AnalyzeTriangle(AnalyzeTriangleRequest): AnalyzeTriangleResponse = 10002;
+method AnalyzeTriangle(
+  AnalyzeTriangleRequest
+): AnalyzeTriangleResponse = 10002;
 
 // =============================================================================
 // METHOD 3: Batch operations - demonstrates arrays and keyed arrays
@@ -82,7 +94,9 @@ struct BatchAnalyzeResponse {
 }
 
 /// Analyzes multiple shapes in one request and returns individual results
-method BatchAnalyze(BatchAnalyzeRequest): BatchAnalyzeResponse = 10003;
+method BatchAnalyze(
+  BatchAnalyzeRequest
+): BatchAnalyzeResponse = 10003;
 
 // =============================================================================
 // METHOD 4: Shape transformations - demonstrates geometric operations
@@ -113,7 +127,9 @@ struct TransformShapeResponse {
 }
 
 /// Applies geometric transformations (translate, rotate, scale) to a shape
-method TransformShape(TransformShapeRequest): TransformShapeResponse = 10004;
+method TransformShape(
+  TransformShapeRequest
+): TransformShapeResponse = 10004;
 
 // =============================================================================
 // METHOD 5: Collections - demonstrates working with keyed arrays
@@ -149,4 +165,6 @@ struct FindLargestShapeResponse {
 }
 
 /// Finds the largest shape in a collection based on area or perimeter
-method FindLargestShape(FindLargestShapeRequest): FindLargestShapeResponse = 10005;
+method FindLargestShape(
+  FindLargestShapeRequest
+): FindLargestShapeResponse = 10005;
