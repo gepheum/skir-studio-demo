@@ -24,9 +24,9 @@ struct Color {
 /// Unit of measurement for distances and areas
 enum MeasurementUnit {
   /// Metric system (meters, square meters)
-  METERS;
+  meters;
   /// Imperial system (feet, square feet)
-  FEET;
+  feet;
   /// Custom unit with conversion factor to meters
   custom: float64;
 }

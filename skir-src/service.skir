@@ -141,8 +141,8 @@ struct FindLargestShapeRequest {
   collection: ShapeCollection;
   /// What to maximize ('area' or 'perimeter')
   criterion: enum {
-    AREA;
-    PERIMETER;
+    area;
+    perimeter;
   };
   /// Unit for measurements
   unit: MeasurementUnit;
